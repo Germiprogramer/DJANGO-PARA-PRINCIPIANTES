@@ -6,4 +6,4 @@ def index(request):
 
 def hello(request, username):
     print(username)
-    return HttpResponse("<h1>Hello %s</h1>")
+    return HttpResponse("<h1>Hello</h1>")
