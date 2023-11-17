@@ -4,6 +4,6 @@ from django.http import HttpResponse
 def index(request):
     return HttpResponse("Index Page")
 
-def hello(request, username):
-    print(username)
+def hello(request):
+    
     return HttpResponse("<h1>Hello</h1>")
