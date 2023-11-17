@@ -1,8 +1,9 @@
-from django.shortcuts import render
-
-# Create your views here.
-
 from django.http import HttpResponse
 
-def hello(request):
-    return HttpResponse("Hello world ! ")
+# Create your views here.
+def index(request):
+    return HttpResponse("Index Page")
+
+def hello(request, username):
+    print(username)
+    return HttpResponse("<h1>Hello %s</h1>")
